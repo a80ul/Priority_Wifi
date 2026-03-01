@@ -17,7 +17,10 @@ We provide an automated script to handle dependencies and optimizations.
 ## **⚠️ System Integrity Alerts (Simulation)**
 
 If your system is not properly configured, the `run_priority.bat` will display the following warnings:
+<br>
+<br>
 **1. Python Not Found**
+<br>
 Occurs if Python is missing or not in your System PATH.
 
 <pre>
@@ -30,6 +33,7 @@ Python is not installed or not added to PATH.
 </pre>
 
 **2. Npcap Driver Missing**
+<br>
 Occurs if the required network drivers are not installed.
 
 <pre>
