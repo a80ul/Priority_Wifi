@@ -4,7 +4,8 @@ NEXA HYPER is a high-performance network optimization tool designed to stabilize
 
 ## **🛠️ Prerequisites**
 Before running the application, ensure your environment meets these requirements:
--Python 3.9+: Download and install from python.org.
+-Python 3.9+: Download and install [Here](https://www.python.org/downloads/)
+<br>
  PATH Configuration: During Python installation, you must check the "Add Python to PATH" box
 -Npcap Driver: Required for low-level network packet handling. Download from npcap.com
 
