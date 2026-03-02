@@ -2,7 +2,7 @@
 title Nexa Run - System Check
 color 0b
 
-:: --- CHECK ADMIN PRIVILEGES ---
+
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' ( goto UACPrompt ) else ( goto gotAdmin )
 :UACPrompt
@@ -21,7 +21,7 @@ echo ^|          "System Integrity Checker"              ^|
 echo ^|__________________________________________________^|
 echo.
 
-:: --- CHECK PYTHON ---
+
 echo [*] Checking Python Installation...
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
@@ -37,9 +37,8 @@ if %errorlevel% neq 0 (
 )
 echo [OK] Python is ready.
 
-:: --- CHECK NPCAP ---
+
 echo [*] Checking Npcap Driver...
-:: Npcap biasanya menginstal driver di System32\drivers\npcap.sys atau folder Npcap
 if not exist "%SystemRoot%\System32\drivers\npcap.sys" (
     echo.
     echo [ ERROR: NPCAP NOT FOUND ]
@@ -64,7 +63,7 @@ if %errorlevel% neq 0 (
     exit
 )
 
-:: --- NETWORK OPTIMIZATION ---
+
 echo.
 echo [!] Optimizing TCP Stack...
 netsh int tcp set global autotuninglevel=disabled >nul
@@ -73,6 +72,7 @@ echo [!] Cleaning ARP Cache...
 arp -d * >nul 2>&1
 
 echo.
-echo [OK] Launching NEXA SUPERNET...
+echo [OK] Launching NEXA HYPER...
 start pythonw nexahyper.py
+
 exit
