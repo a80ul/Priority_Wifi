@@ -58,3 +58,14 @@ Npcap driver is required for network packet injection.
 
 + Administrator Access: This app requires elevated privileges to modify network tables `(netsh` & `arp`).
 + Antivirus: Some security software may flag the ARP clearing activity. This is a False Positive as the app is performing legitimate network maintenance.
+
+
+## 🤝 Support & Donation
+
+If this project makes your work easier, consider providing support to keep the development of new features going:
+
+| Platform | Link |
+| :--- | :--- |
+| **Ko-fi** | [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/a80ul) |
+| **Saweria** | [![Saweria](https://img.shields.io/badge/Saweria-Donasi-orange?style=for-the-badge&logo=heart)](https://saweria.co/A80ul421) |
+| **GitHub** | Give a ⭐️ to this repository as a form of appreciation. |
